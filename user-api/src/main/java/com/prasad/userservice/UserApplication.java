@@ -1,13 +1,13 @@
-package com.prasad.facade;
+package com.prasad.userservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FacadeApplication {
+public class UserApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FacadeApplication.class, args);
+		SpringApplication.run(UserApplication.class, args);
 	}
 
 }

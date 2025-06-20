@@ -10,9 +10,9 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>user-service</artifactId>
+	<artifactId>user-api</artifactId>
 	<version>1.0</version>
-	<name>user-service</name>
+	<name>user-api</name>
 	<description>User service</description>
 
 	<properties>
