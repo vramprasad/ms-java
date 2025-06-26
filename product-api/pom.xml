@@ -10,10 +10,10 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>user-api</artifactId>
+	<artifactId>product-api</artifactId>
 	<version>1.0</version>
-	<name>user-api</name>
-	<description>User service</description>
+	<name>product-api</name>
+	<description>Product service</description>
 	<packaging>jar</packaging>
 
 	<properties>
