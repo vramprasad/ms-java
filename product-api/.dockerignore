@@ -1,0 +1,6 @@
+.git/
+.vscode/
+.gitignore
+.idea/
+target/
+!target/*.jar

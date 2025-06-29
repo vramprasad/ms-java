@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "7b61c2aa-3226-4e43-ae27-9070c64f8da8",
+		"name": "Customer API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1288303"
+	},
+	"item": [
+		{
+			"name": "customer-api",
+			"item": [
+				{
+					"name": "Healthcheck",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9901/customer-api/healthcheck",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9901",
+							"path": [
+								"customer-api",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9901/customer-api/listAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9901",
+							"path": [
+								"customer-api",
+								"listAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single Customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9901/customer-api/1539",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9901",
+							"path": [
+								"customer-api",
+								"1539"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"custName\": \"Ramprasad 8\",\r\n        \"custEmail\": \"vrprasad8@mail.com\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9901/customer-api/addCustomer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9901",
+							"path": [
+								"customer-api",
+								"addCustomer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1539,\r\n    \"custName\": \"Ramprasad 8\",\r\n    \"custEmail\": \"vrprasad8@yahoo.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9901/customer-api/update/1539",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9901",
+							"path": [
+								"customer-api",
+								"update",
+								"1539"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\": \"Samsung DDR5 8 GB RAM 2200MHz\",\r\n    \"productAvlQty\": 50,\r\n    \"productPrice\": 1900.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9902/product-api/addProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9902",
+							"path": [
+								"product-api",
+								"addProduct"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

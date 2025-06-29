@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dep-product-api # Name of Deployment
+spec:                   # Specification for Deployment
+  replicas: 1
+  selector:
+    matchLabels:
+      app: product-api
+  # Pod specification
+  template:
+    metadata:           # Metadata for Pods
+      labels:           # Label for the pod
+        app: product-api
+    spec:               # Specification for the pod
+      containers:
+        - name: ctr-product-api
+          image: vramprasad/product-api:v1.1
+          livenessProbe:
+            httpGet:
+              path: /product-api/healthcheck
+              port: 9902
+            periodSeconds: 10
+            initialDelaySeconds: 30
+        #- name: ctr-product-api-client
+        #  image: vramprasad/product-api:v1.1
+

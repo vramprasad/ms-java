@@ -1,8 +1,11 @@
-INSERT INTO tbl_users (name, email) VALUES
-    ('Ramprasad 1', 'vrprasad1@mail.com'),
-    ('Ramprasad 2', 'vrprasad2@mail.com'),
-    ('Ramprasad 3', 'vrprasad3@mail.com'),
-    ('Ramprasad 4', 'vrprasad4@mail.com'),
-    ('Ramprasad 5', 'vrprasad5@mail.com'),
-    ('Ramprasad 6', 'vrprasad6@mail.com'),
-    ('Ramprasad 7', 'vrprasad7@mail.com');
+INSERT INTO tbl_product (ID, PRODUCT_NAME, PRODUCT_PRICE, PRODUCT_AVL_QTY, DISC_PERCENT) VALUES
+    (NEXTVAL('SEQ_PROD'), 'Acer AL15-52', 38999.00, 5, 10.0),
+    (NEXTVAL('SEQ_PROD'), 'Crucial SSD 2TB', 10500.00, 15, 0.0),
+    (NEXTVAL('SEQ_PROD'), 'Crucial SSD 1TB', 5800.00, 20, 0.0),
+    (NEXTVAL('SEQ_PROD'), 'Crucial SSD 500 GB', 3199.00, 40, 0.0),
+    (NEXTVAL('SEQ_PROD'), 'Samsung DDR5 16 GB RAM 3200MHz', 3200.00, 25, 0.0),
+    (NEXTVAL('SEQ_PROD'), 'Samsung DDR5 8 GB RAM 3200MHz', 1800.00, 50, 0.0),
+    (NEXTVAL('SEQ_PROD'), 'Samsung DDR5 4 GB RAM 3200MHz', 1400.00, 10, 0.0),
+    (NEXTVAL('SEQ_PROD'), 'Samsung DDR5 2 GB RAM 3200MHz', 900.00, 5, 0.0);
+
+

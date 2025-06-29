@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "0c4bf2c0-7182-4913-a759-9f143b30fd5e",
+		"name": "Product API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1288303"
+	},
+	"item": [
+		{
+			"name": "product-api",
+			"item": [
+				{
+					"name": "Healthcheck",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9902/product-api/healthcheck",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9902",
+							"path": [
+								"product-api",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9902/product-api/listAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9902",
+							"path": [
+								"product-api",
+								"listAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9902/product-api/4706",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9902",
+							"path": [
+								"product-api",
+								"4706"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Quantity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9902/product-api/update?id=4706&orderQty=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9902",
+							"path": [
+								"product-api",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4706"
+								},
+								{
+									"key": "orderQty",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\": \"Samsung DDR5 8 GB RAM 2200MHz\",\r\n    \"productAvlQty\": 50,\r\n    \"productPrice\": 1900.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9902/product-api/addProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9902",
+							"path": [
+								"product-api",
+								"addProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\": \"Samsung DDR5 8 GB RAM 2200MHz\",\r\n    \"productAvlQty\": 50,\r\n    \"productPrice\": 1900.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9902/product-api/4709",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9902",
+							"path": [
+								"product-api",
+								"4709"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
